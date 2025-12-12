@@ -1,0 +1,123 @@
+/* 전체 기본 설정 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* 페이지 공통 */
+.page {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f8;
+}
+
+.page.active {
+  display: flex;
+}
+
+/* 카드 */
+.card {
+  background-color: #ffffff;
+  padding: 24px 32px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  text-align: center;
+}
+
+/* 카드 내부 요소 간격 */
+.card > * {
+  margin-bottom: 10px;
+}
+
+.card > *:last-child {
+  margin-bottom: 0;
+}
+
+/* 제목 */
+h2 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+}
+
+/* 입력창 */
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* 버튼 */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #2f80ed;
+  color: white;
+}
+
+/* 텍스트 */
+p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* 금액 강조 */
+span {
+  font-weight: bold;
+  color: #2f80ed;
+}
+
+/* Balance 강조 */
+#balance {
+  font-size: 20px;
+}
+
+/* 첫 페이지 버튼 */
+#page1 .card {
+  text-align: center;
+}
+
+#page1 button {
+  width: auto;
+  padding: 10px 24px;
+  font-size: 15px;
+}
+
+/* 메시지 창 */
+.message-box {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fafafa;
+  max-height: 120px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.message-title {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.message {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #555;
+}

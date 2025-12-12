@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>20210699 김예빈</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript -->
+  <script src="js/data.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/pos.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 1. 첫 페이지 -->
+  <div id="page1" class="page active">
+    <div class="card">
+      <button onclick="makeNewSale()">makeNewSale()</button>
+    </div>
+  </div>
+
+  <!-- 2. 상품 입력 페이지 -->
+  <div id="page2" class="page">
+    <div class="card">
+      <h2>상품 입력</h2>
+
+      <select id="itemId">
+        <option value="">상품 ID 선택</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400">400</option>
+        <option value="500">500</option>
+      </select>
+
+      <input type="number" id="quantity" placeholder="Quantity">
+
+      <button onclick="enterItem()">enterItem()</button>
+
+      <p>
+        Description :
+        <span id="itemDesc">-</span>
+      </p>
+
+      <div id="messageBox" class="message-box">
+        <p class="message-title">입력 내역</p>
+        <div id="messageLog"></div>
+      </div>
+
+
+      <p>
+        Current Total :
+        <span id="currentTotal">0</span>
+      </p>
+
+      <button onclick="endSale()">endSale()</button>
+    </div>
+  </div>
+
+  <!-- 3. 결제 페이지 -->
+  <div id="page3" class="page">
+    <div class="card">
+      <h2>결제</h2>
+
+      <p>
+        Amount Due :
+        <span id="finalTotal">0</span>
+      </p>
+
+      <input type="number" id="amount" placeholder="Amount">
+
+      <button onclick="makePayment()">makePayment()</button>
+
+      <p>
+        Balance :
+        <span id="balance">0</span>
+      </p>
+
+      <button onclick="goToFirstPage()">첫 페이지로 돌아가기</button>
+    </div>
+  </div>
+
+</body>
+</html>
